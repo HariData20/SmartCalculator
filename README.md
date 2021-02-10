@@ -23,7 +23,7 @@ Postfix notation 2:
 
 A stack (LIFO) is used to convert an expression from infix to postfix notation. The stack is used to store operators for reordering.
 Expression in postfix notation, is processed using another stack.
-###Steps to convert Infix to Postfix:
+### Steps to convert Infix to Postfix:
 
 Add operands (numbers and variables) to the result (postfix notation) as they arrive.
 If the stack is empty or contains a left parenthesis on top, push the incoming operator on the stack.
@@ -33,7 +33,7 @@ If the incoming element is a left parenthesis, push it on the stack.
 6.If the incoming element is a right parenthesis, pop the stack and add operators to the result until you see a left parenthesis. Discard the pair of parentheses.
 7.At the end of the expression, pop the stack and add all operators to the result.
 8.No parentheses should remain on the stack. Otherwise, the expression has unbalanced brackets. It is a syntax error.
-###Calculating the result
+### Calculating the result
 
 If the incoming element is a number, push it into the stack (the whole number, not a single digit!).
 
@@ -43,7 +43,7 @@ If the incoming element is an operator, then pop twice to get two numbers and pe
 
 When the expression ends, the number on the top of the stack is a final result.
 
-###Objectives
+### Objectives
 This program supports multiplication *, integer division / and parentheses (...).
 Unary minus operator, should still work.
 The program will stop when the user enters the /exit command.
